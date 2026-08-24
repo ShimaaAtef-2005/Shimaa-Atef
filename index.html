@@ -1,0 +1,885 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   
+    <title>Shimaa Atef — Frontend Developer</title>
+
+    <meta
+      name="description"
+      content="Frontend Developer — Learning, Building, Growing."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- ============================================================
+       LOADING SCREEN
+  ============================================================ -->
+     <div id="loader" role="status" aria-live="polite">
+    <div class="loader-inner">
+      <div class="loader-line"></div>
+      <p class="loader-text" id="loaderText">Initializing Portfolio...</p>
+      <div class="loader-progress">
+        <div class="loader-bar" id="loaderBar"></div>
+      </div>
+    </div>
+  </div>
+
+    <!-- ============================================================
+       CURSOR GLOW — follows mouse on desktop
+  ============================================================ -->
+    <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+    <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo" aria-label="Back to top">S.A</a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks" role="list">
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#lab" class="nav-link">Lab</a></li>
+          <li><a href="#learning" class="nav-link">Learning</a></li>
+          <li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">let’s Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ============================================================
+         SECTION 1 — HERO
+    ============================================================ -->
+      <section id="hero" class="hero" aria-label="Introduction">
+        <!-- Floating decorative elements — purely visual -->
+        <div class="hero-bg" aria-hidden="true">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+          <div class="grid-lines"></div>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-eyebrow reveal-up">
+            <span class="dot"></span> Digital Lab — Est. 2025
+          </div>
+
+          <h1 class="hero-name reveal-up delay-1">
+            <span class="name-line">Shimaa Atef</span>
+          </h1>
+
+          <p class="hero-title reveal-up delay-2" id="roleText">
+            Frontend Developer
+          </p>
+
+          <p class="hero-tagline reveal-up delay-3">
+            Learning <span class="sep">·</span> Building
+            <span class="sep">·</span> Growing
+          </p>
+          <p class="hero-tagline reveal-up delay-4">
+            Creating elegant digital experiences while continuously learning and
+            growing.
+          </p>
+          <div class="hero-actions reveal-up delay-5">
+            <a href="#lab" class="btn btn-primary">Explore Lab</a>
+            <a href="#lab" class="btn btn-ghost">View Projects</a>
+          </div>
+              <div class="contact-links" style="margin: 30px;">
+              
+              <a
+                href="mailto:2005nouratef@gmail.com"
+                class="contact-link"
+                aria-label="Send email"
+              >
+                <span class="contact-link-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+</svg></span>
+                <span>Email</span>
+              </a>
+              
+              <a
+                href="https://www.linkedin.com/in/shimaa-atef-hamada/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-link"
+                aria-label="LinkedIn profile"
+              >
+                <span class="contact-link-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+</svg></span>
+                <span>LinkedIn</span>
+              </a>
+              
+              <a
+                href="javascript:void(0)"
+                
+                rel="noopener noreferrer"
+                class="contact-link"
+                aria-label="GitHub profile"
+              >
+                <span class="contact-link-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.931.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+</svg></span>
+                <span>GitHub</span>
+              </a>
+               <a
+                href="https://wa.me/201100833067"
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="contact-link"
+                aria-label="WhatsApp"
+              >
+                <span class="contact-link-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg></span>
+                <span>WhatsApp</span>
+              </a>
+
+            </div>
+          
+        </div>
+
+        </div>
+        
+        <!-- Scroll hint -->
+        <div class="scroll-hint reveal-up delay-4" aria-hidden="true">
+          <div class="scroll-line"></div>
+          <span>scroll</span>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         SECTION 2 — DIGITAL JOURNEY (Timeline)
+    ============================================================ -->
+      <section
+        id="journey"
+        class="journey section-pad"
+        aria-label="Digital Journey"
+      >
+        <div class="container">
+          <div class="section-header reveal-up">
+            <span class="section-label">Chapter 0</span>
+            <h2 class="section-title">Digital Journey</h2>
+            <p class="section-sub">
+              Every expert was once a beginner. Here's mine.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <div class="journey-item reveal-up" data-index="01">
+              <div class="journey-connector" aria-hidden="true">
+                <div class="journey-dot"></div>
+                <div class="journey-line"></div>
+              </div>
+              <div class="journey-card">
+                <!-- CHANGE STAGE YEAR -->
+                <span class="journey-year">2025</span>
+                <!-- CHANGE STAGE TITLE -->
+                <h3 class="journey-heading">Started Learning</h3>
+                <!-- CHANGE STAGE TEXT -->
+                <p class="journey-text">
+                  Opened a browser and watched code become something real for
+                  the first time. That moment felt like discovering a new kind
+                  of creativity. The journey begins with curiosity.
+                </p>
+                <div class="journey-tags">
+                  <!-- CHANGE TAGS -->
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS Basics</span>
+                </div>
+              </div>
+              
+            </div>
+              <div class="journey-item reveal-up" data-index="02">
+              <div class="journey-connector" aria-hidden="true">
+                <div class="journey-dot"></div>
+                <div class="journey-line"></div>
+              </div>
+              <div
+                class="journey-card journey-card--certificate"
+                tabindex="0"
+                role="button"
+                aria-label="Open Digital Egypt Pioneers Initiative certificate details"
+                data-certificate="true"
+                data-cert-title="Digital Egypt Pioneers Initiative"
+                data-cert-image="certificate.jpg"
+              >
+                <span class="journey-year">2025</span>
+                <h3 class="journey-heading">Digital Egypt Pioneers Initiative</h3>
+                <p class="journey-text">
+                  A turning point in my learning journey — where structured practice,
+                  projects, and consistency helped transform curiosity into real
+                  building experience.
+                </p>
+                <div class="journey-tags">
+                  <span class="tag">Front-End</span>
+                  <span class="tag">6 Months</span>
+                  <span class="tag">Certificate</span>
+                </div>
+                <div class="journey-card-cta" aria-hidden="true" id="">View Certificate →</div>
+              </div>
+            </div>
+
+            <!-- ADD NEW JOURNEY ITEM -->
+            <div class="journey-item reveal-up" data-index="02">
+              <div class="journey-connector" aria-hidden="true">
+                <div class="journey-dot"></div>
+                <div class="journey-line"></div>
+              </div>
+              <div class="journey-card">
+                <span class="journey-year">2025</span>
+                <h3 class="journey-heading">Built First Projects</h3>
+                <p class="journey-text">
+                  Turned blank pages into real things — a calculator, a landing
+                  page, a to-do list. Each line of code taught more than any
+                  tutorial could promise.
+                </p>
+                <div class="journey-tags">
+                  <span class="tag">Vanilla JS</span>
+                  <span class="tag">Flexbox</span>
+                  <span class="tag">Responsive</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="journey-item reveal-up" data-index="03">
+              <div class="journey-connector" aria-hidden="true">
+                <div class="journey-dot"></div>
+                <div class="journey-line"></div>
+              </div>
+              <div class="journey-card">
+                <span class="journey-year">2025</span>
+                <h3 class="journey-heading">Discovered Front-End</h3>
+                <p class="journey-text">
+                  Realized frontend is not just aesthetics — it's the bridge
+                  between design and human experience. Started caring deeply
+                  about how things feel, not just how they look.
+                </p>
+                <div class="journey-tags">
+                  <span class="tag">CSS Grid</span>
+                  <span class="tag">Animations</span>
+                  <span class="tag">UX Thinking</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="journey-item reveal-up" data-index="04">
+              <div class="journey-connector" aria-hidden="true">
+                <div class="journey-dot"></div>
+                <div class="journey-line"></div>
+              </div>
+              <div class="journey-card">
+                <span class="journey-year">2026</span>
+                <h3 class="journey-heading">Current Learning Phase</h3>
+                <p class="journey-text">
+                  Diving deeper — React, TypeScript, component architecture,
+                  performance, accessibility. Building a foundation that will
+                  carry far into the future.
+                </p>
+                <div class="journey-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">TypeScript</span>
+                  <span class="tag">Git</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="journey-item reveal-up" data-index="05">
+              <div class="journey-connector" aria-hidden="true">
+                <div class="journey-dot"></div>
+              </div>
+              <div class="journey-card journey-card--future">
+                <span class="journey-year">Next</span>
+                <h3 class="journey-heading">Future Goals</h3>
+                <p class="journey-text">
+                  Contribute to meaningful products. Build tools people love.
+                  Keep learning until "I can't do this" becomes "I built this."
+                  The horizon keeps moving — that's the point.
+                </p>
+                <div class="journey-tags">
+                  <span class="tag tag--future">Full-Stack</span>
+                  <span class="tag tag--future">Open Source</span>
+                  <span class="tag tag--future">∞ Learning</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         SECTION 3 — PROJECT LABORATORY
+    ============================================================ -->
+      <section id="lab" class="lab section-pad" aria-label="Project Laboratory">
+        <div class="container">
+          <div class="section-header reveal-up">
+            <span class="section-label">Chapter 02</span>
+            <h2 class="section-title">Project Laboratory</h2>
+            <p class="section-sub">
+              Ideas turned into experiments. Each one a lesson.
+            </p>
+          </div>
+
+          <div class="experiments-grid">
+            <!-- ======================================================
+               EXPERIMENT CARD
+          ====================================================== -->
+            <article
+              class="experiment reveal-up"
+              tabindex="0"
+              role="button"
+              aria-label="Open Experiment 01 details"
+              data-id="01"
+              data-title="Growth Upsell Landing Page Design"
+              data-status="Completed"
+              data-tech="HTML · CSS · JavaScript "
+              data-result="A responsive landing page for a digital agency showcasing web design and e-commerce services."
+              data-challenge="Designing a clear and attractive layout that presents multiple services in a simple way."
+              data-solution="Built a clean layout using HTML and CSS with a focus on structure, spacing, and responsiveness."
+              data-lessons="Gained experience working with a client, understanding requirements clearly, and implementing feedback and requested changes effectively while improving the overall design"
+              data-images="Screenshot 2026-06-15 204343.png,
+              Screenshot 2026-06-15 204420.png,
+              Screenshot 2026-06-15 204436.png,
+              Screenshot 2026-06-15 204453.png,
+              Screenshot 2026-06-15 204518.png"
+              data-link="#"
+            >
+              <div class="exp-number" aria-hidden="true">01</div>
+              <div class="exp-status">
+                <span class="status-dot" aria-hidden="true"></span>
+                <!-- CHANGE STATUS: Completed / In Progress / Planned -->
+                Completed
+              </div>
+              <h3 class="exp-title">
+                Growth Upsell Landing Page (Client Project)
+              </h3>
+              <p class="exp-result">
+                A simple landing page for a digital agency offering web design
+                and e-commerce services.
+              </p>
+              <div class="exp-tech">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <div class="exp-cta" aria-hidden="true">Open experiment →</div>
+            </article>
+
+            <article
+              class="experiment reveal-up"
+              tabindex="0"
+              role="button"
+              aria-label="Open Experiment 02 details"
+              data-id="02"
+              data-title="60-Day Body Transformation Plan – Landing Page"
+              data-status="Completed"
+              data-tech="HTML · CSS · JavaScript · LocalStorage"
+              data-result="A clean and engaging landing page designed to present and sell a digital product effectively."
+              data-challenge="Creating a persuasive design that encourages users to understand the product value and take action."
+              data-solution="Built a structured landing page with clear sections, strong visual hierarchy, and focused messaging using HTML and CSS."
+              data-lessons="Gained experience designing for digital products, focusing on conversion-oriented layout, and working with client requirements and feedback."
+              data-images="Screenshot 2026-06-15 205003.png,
+              Screenshot 2026-06-15 205021.png,
+              Screenshot 2026-06-15 205110.png,
+              Screenshot 2026-06-15 205128.png"
+              data-link="#"
+            >
+              <div class="exp-number" aria-hidden="true">02</div>
+              <div class="exp-status">
+                <span class="status-dot" aria-hidden="true"></span>
+                Completed
+              </div>
+              <h3 class="exp-title">
+                60-Day Body Transformation Plan – Landing Page (Client Project)
+              </h3>
+              <p class="exp-result">
+                A landing page for a digital product offering a 60-day fitness
+                and body transformation plan.
+              </p>
+              <div class="exp-tech">
+                <span>HTML</span><span>CSS</span><span>JS</span
+                ><span>LocalStorage</span>
+              </div>
+              <div class="exp-cta" aria-hidden="true">Open experiment →</div>
+            </article>
+
+            <article
+              class="experiment reveal-up"
+              tabindex="0"
+              role="button"
+              aria-label="Open Experiment 03 details"
+              data-id="03"
+              data-title="PureSmile – Dental Clinic Website"
+              data-status="Completed"
+              data-tech="HTML · CSS · JavaScript"
+              data-result="A fully responsive website with both dark and light mode to enhance user experience and accessibility."
+              data-challenge="Building a complete website structure with multiple sections while ensuring consistency in both dark and light themes."
+              data-solution="Developed a full website using HTML, CSS, and JavaScript with a theme toggle feature for dark and light mode, ensuring a smooth and consistent UI across all pages."
+              data-lessons="Improved my skills in building complete multi-section websites, implementing theme switching (dark/light mode), and organizing complex layouts in a clean and user-friendly way."
+              data-images="Screenshot 2026-06-15 211814.png,
+              Screenshot 2026-06-15 211843.png,
+              Screenshot 2026-06-15 211941.png,
+              Screenshot 2026-06-15 211959.png,
+             Screenshot 2026-06-15 212016.png,
+              Screenshot 2026-06-15 212035.png,
+              Screenshot 2026-06-15 212112.png,
+              Screenshot 2026-06-15 212126.png"
+              data-link="#"
+            >
+              <div class="exp-number" aria-hidden="true">03</div>
+              <div class="exp-status">
+                <span class="status-dot" aria-hidden="true"></span>
+                Completed
+              </div>
+              <h3 class="exp-title">PureSmile – Dental Clinic Website</h3>
+              <p class="exp-result">
+                A complete dental clinic website designed for PureSmile,
+                including services, booking sections, and essential clinic
+                information
+              </p>
+              <div class="exp-tech">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <div class="exp-cta" aria-hidden="true">Open experiment →</div>
+            </article>
+
+            <article
+              class="experiment experiment--inprogress reveal-up"
+              tabindex="0"
+              role="button"
+              aria-label="Open Experiment 04 details"
+              data-id="04"
+              data-title="EcoFriendly Marketplace – React Project"
+              data-status="In Progress"
+              data-tech="React · TypeScript · CSS Modules"
+              data-result="A fully functional marketplace website built using React, featuring dark and light mode for better user experience."
+              data-challenge="Managing multiple components and building a scalable structure while ensuring a consistent UI across themes"
+              data-solution="Developed the project using React with reusable components, state management for theme switching (dark/light mode), and a clean responsive layout."
+              data-lessons="Improved my skills in React development, component reusability, state management, and building scalable front-end applications."
+              data-image="Screenshot 2026-06-15 001041.png"
+              data-link="#"
+            >
+              <div class="exp-number" aria-hidden="true">04</div>
+              <div class="exp-status exp-status--inprogress">
+                <span
+                  class="status-dot status-dot--active"
+                  aria-hidden="true"
+                ></span>
+                In Progress
+              </div>
+              <h3 class="exp-title">EcoFriendly Marketplace – React Project</h3>
+              <p class="exp-result">
+                A React-based e-commerce website for selling eco-friendly
+                products with a modern and responsive design.
+              </p>
+              <div class="exp-tech">
+                <span>React</span><span>TypeScript</span
+                ><span>CSS Modules</span>
+              </div>
+              <div class="exp-cta" aria-hidden="true">Open experiment →</div>
+            </article>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- ============================================================
+         SECTION 4 — LEARNING WALL (Tech Bubbles)
+    ============================================================ -->
+      <section
+        id="learning"
+        class="learning section-pad"
+        aria-label="Learning Wall"
+      >
+        <div class="container">
+          <div class="section-header reveal-up">
+            <span class="section-label">Chapter 03</span>
+            <h2 class="section-title">Learning Wall</h2>
+            <p class="section-sub">
+              Technologies I've touched, studied, and used to build.
+            </p>
+          </div>
+
+          <ul class="bubbles-wrap" role="list" aria-label="Technology list">
+            <!-- CHANGE BUBBLE: Edit name and data-used (shows on hover) -->
+            <!-- ADD BUBBLE: Copy a <li> and paste it into this list -->
+            <li
+              class="bubble reveal-up"
+              data-used="Used in every project — the structure of everything."
+            >
+              <span class="bubble-icon" aria-hidden="true">⬡</span>HTML
+            </li>
+            <li
+              class="bubble reveal-up"
+              data-used="Layouts, animations, custom properties — my creative tool."
+            >
+              <span class="bubble-icon" aria-hidden="true">⬡</span>CSS
+            </li>
+            <li
+              class="bubble reveal-up"
+              data-used="The logic layer — from DOM manipulation to async APIs."
+            >
+              <span class="bubble-icon" aria-hidden="true">⬡</span>JavaScript
+            </li>
+            <li
+              class="bubble reveal-up"
+              data-used="Adding types to JavaScript — currently learning and applying."
+            >
+              <span class="bubble-icon" aria-hidden="true">⬡</span>TypeScript
+            </li>
+            <li
+              class="bubble reveal-up"
+              data-used="Component architecture — building the React Component Library."
+            >
+              <span class="bubble-icon" aria-hidden="true">⬡</span>React
+            </li>
+            <li
+              class="bubble reveal-up"
+              data-used="Version control — daily use for tracking every experiment."
+            >
+              <span class="bubble-icon" aria-hidden="true">⬡</span>Git
+            </li>
+            <li
+              class="bubble reveal-up"
+              data-used="Collaboration and deployment for all public experiments."
+            >
+              <span class="bubble-icon" aria-hidden="true">⬡</span>GitHub
+            </li>
+            <li
+              class="bubble reveal-up"
+              data-used="Responsive layouts — used across every project."
+            >
+              <span class="bubble-icon" aria-hidden="true">⬡</span>Flexbox
+            </li>
+            <li
+              class="bubble reveal-up"
+              data-used="Complex page layouts with CSS Grid — clean, powerful."
+            >
+              <span class="bubble-icon" aria-hidden="true">⬡</span>CSS Grid
+            </li>
+            <li
+              class="bubble reveal-up"
+              data-used="Accessibility — building interfaces everyone can use."
+            >
+              <span class="bubble-icon" aria-hidden="true">⬡</span>a11y
+            </li>
+            <li
+              class="bubble reveal-up"
+              data-used="Currently exploring — command line feels like speaking to the machine."
+            >
+              <span class="bubble-icon" aria-hidden="true">⬡</span>Terminal
+            </li>
+            <li
+              class="bubble reveal-up"
+              data-used="Exploring design systems and how interfaces communicate."
+            >
+              <span class="bubble-icon" aria-hidden="true">⬡</span>Figma
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         SECTION 5 — PHILOSOPHY
+    ============================================================ -->
+      <section
+        id="philosophy"
+        class="philosophy section-pad"
+        aria-label="Philosophy"
+      >
+        <div class="container container--narrow">
+          <div class="philosophy-inner reveal-up">
+            <span class="section-label">Chapter 04</span>
+
+            <!-- CHANGE PHILOSOPHY TITLE -->
+            <h2 class="philosophy-title">Always Learning</h2>
+
+            <!-- CHANGE PHILOSOPHY TEXT -->
+            <blockquote class="philosophy-quote">
+              <p>
+                I don't chase perfection. I enjoy building, improving, and
+                discovering. Every project teaches something new. Every bug is a
+                question waiting to be answered. Every finished piece is proof
+                that I showed up.
+              </p>
+            </blockquote>
+
+            <p class="philosophy-sub">
+              The lab is never closed. The experiments keep going.
+            </p>
+
+            <!-- Optional decorative element -->
+            <div class="philosophy-mark" aria-hidden="true">✦</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         SECTION 6 — CONTACT
+    ============================================================ -->
+      <section id="contact" class="contact section-pad" aria-label="Contact">
+        <div class="container container--narrow">
+          <div class="contact-card reveal-up">
+            <span class="section-label">Let's Connect</span>
+        
+            <h2 class="contact-title">Let's Build Something</h2>
+            
+            <p class="contact-text">
+              Open to learning opportunities, collaborations, and conversations
+              about front-end, design, and everything in between.
+            </p>
+
+            
+            <div class="contact-links" style="margin: 30px;">
+              
+              <a
+                href="mailto:2005nouratef@gmail.com"
+                class="contact-link"
+                aria-label="Send email"
+              >
+                <span class="contact-link-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+</svg></span>
+                <span>Email</span>
+              </a>
+              
+              <a
+                href="https://www.linkedin.com/in/shimaa-atef-hamada/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-link"
+                aria-label="LinkedIn profile"
+              >
+                <span class="contact-link-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+</svg></span>
+                <span>LinkedIn</span>
+              </a>
+              
+              <a
+                href="javascript:void(0)"
+                
+                rel="noopener noreferrer"
+                class="contact-link"
+                aria-label="GitHub profile"
+              >
+                <span class="contact-link-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.931.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+</svg></span>
+                <span>GitHub</span>
+              </a>
+               <a
+                href="https://wa.me/201100833067"
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="contact-link"
+                aria-label="WhatsApp"
+              >
+                <span class="contact-link-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg></span>
+                <span>WhatsApp</span>
+              </a>
+
+            </div>
+          
+
+            
+            <a href="mailto:2005nouratef@gmail.com"
+              class="btn btn-primary btn-lg"
+              >Let's Build Something →</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p class="footer-text">
+          <!-- CHANGE FOOTER TEXT -->
+          Built with curiosity &amp; care · Shimaa Atef © 2026
+        </p>
+        <p class="footer-sub">Always learning. Never stopping.</p>
+      </div>
+    </footer>
+
+    <!-- ============================================================
+       PROJECT MODAL
+       
+  ============================================================ -->
+    <div
+      id="modal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+      hidden
+    >
+      <div class="modal-backdrop" id="modalBackdrop"></div>
+      <div class="modal-panel">
+        <button class="modal-close" id="modalClose" aria-label="Close modal">
+          ✕
+        </button>
+        <div class="modal-scroll">
+          <!-- ============================================================
+               IMAGE SLIDEr
+          ============================================================ -->
+          <div class="modal-image-wrap" id="modalSliderWrap">
+            <div class="slider-track" id="sliderTrack" aria-live="polite"></div>
+
+            <button class="slider-btn slider-btn--prev" id="sliderPrev" aria-label="Previous image" hidden>
+              ‹
+            </button>
+            <button class="slider-btn slider-btn--next" id="sliderNext" aria-label="Next image" hidden>
+              ›
+            </button>
+
+            <div class="slider-dots" id="sliderDots" hidden aria-label="Image indicators"></div>
+
+            <div
+              class="modal-image-placeholder"
+              id="modalImagePlaceholder"
+              aria-hidden="true"
+            >
+              <span>Project Screenshot</span>
+              <em>Add image path to data-images attribute</em>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-meta">
+              <span class="modal-id" id="modalId"></span>
+              <span class="modal-status" id="modalStatus"></span>
+            </div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-tech" id="modalTech"></p>
+
+            <div class="modal-section">
+              <h3>Result</h3>
+              <p id="modalResult"></p>
+            </div>
+            <div class="modal-section">
+              <h3>Challenge</h3>
+              <p id="modalChallenge"></p>
+            </div>
+            <div class="modal-section">
+              <h3>Solution</h3>
+              <p id="modalSolution"></p>
+            </div>
+            <div class="modal-section">
+              <h3>Lessons Learned</h3>
+              <p id="modalLessons"></p>
+            </div>
+
+            <a
+              href="#"
+              class="btn btn-primary"
+              id="modalLink"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View Project →</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- ============================================================
+       CERTIFICATE MODA
+    ============================================================ -->
+    <div
+      id="certModal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="certModalTitle"
+      hidden
+    >
+      <div class="modal-backdrop" id="certModalBackdrop"></div>
+      <div class="modal-panel">
+        <button class="modal-close" id="certModalClose" aria-label="Close certificate modal">
+          ✕
+        </button>
+        <div class="modal-scroll">
+          <!-- Certificate Image -->
+          <div class="modal-image-wrap cert-image-wrap">
+            <img
+              id="certModalImage"
+              src="IMG_20260204_093913.png"
+              alt="Digital Egypt Pioneers Initiative Certificate"
+              class="cert-modal-image"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="modal-body">
+            <div class="modal-meta">
+              <span class="modal-id">Certificate</span>
+              <span class="modal-status">Completed</span>
+            </div>
+            <h2 class="modal-title" id="certModalTitle">Front-End Development Track</h2>
+
+            <div class="modal-section">
+              <h3>About</h3>
+              <p>Completed a six-month learning journey focused on Front-End Development through practical projects, technical training, and continuous practice.</p>
+            </div>
+
+            <div class="modal-section">
+              <h3>Technical Skills</h3>
+              <ul class="cert-skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Responsive Design</li>
+                <li>UI Implementation</li>
+                <li>Project Development</li>
+              </ul>
+            </div>
+
+            <div class="modal-section">
+              <h3>Non-Technical Skills</h3>
+              <ul class="cert-skills-list">
+                <li>Communication</li>
+                <li>Team Collaboration</li>
+                <li>Problem Solving</li>
+                <li>Presentation Skills</li>
+                <li>Time Management</li>
+                <li>Freelancing Awareness</li>
+              </ul>
+            </div>
+
+            <div class="modal-section">
+              <h3>Outcome</h3>
+              <p>This experience helped me strengthen my foundations, build real projects, and continue learning with more confidence and direction.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
